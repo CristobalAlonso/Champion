@@ -41,5 +41,71 @@ public class User_Registry {
 	
 	@OneToOne(mappedBy = "user_Registry")
 	private ClaimCreator_User claimCreator_User;
+
+	public String getMailUser() {
+		return mailUser;
+	}
+
+	public void setMailUser(String mailUser) {
+		this.mailUser = mailUser;
+	}
+
+	public String getPassUser() {
+		return passUser;
+	}
+
+	public void setPassUser(String passUser) {
+		this.passUser = passUser;
+	}
+
+	public String getNameUser() {
+		return nameUser;
+	}
+
+	public void setNameUser(String nameUser) {
+		this.nameUser = nameUser;
+	}
+
+	public String getLastName_User() {
+		return lastName_User;
+	}
+
+	public void setLastName_User(String lastName_User) {
+		this.lastName_User = lastName_User;
+	}
+
+	public String getRolUser() {
+		return rolUser;
+	}
+
+	public void setRolUser(String rolUser) {
+		this.rolUser = rolUser;
+	}
+
+	public Admin_User getAdmin_User() {
+		return admin_User;
+	}
+
+	public void setAdmin_User(Admin_User admin_User) {
+		this.admin_User = admin_User;
+	}
+
+	public Executive_User getExecutive_User() {
+		return executive_User;
+	}
+
+	public void setExecutive_User(Executive_User executive_User) {
+		this.executive_User = executive_User;
+	}
+
+	public ClaimCreator_User getClaimCreator_User() {
+		return claimCreator_User;
+	}
+
+	public void setClaimCreator_User(ClaimCreator_User claimCreator_User) {
+		this.claimCreator_User = claimCreator_User;
+	}
+	
+	
 	
 }

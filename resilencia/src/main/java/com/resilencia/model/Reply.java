@@ -37,9 +37,51 @@ public class Reply {
 
 	@OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "idAnswered_Claim", referencedColumnName = "idClaim")
-    private Claim claim;
+    private Claim claimToAnswer;
 
 	@OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "idExecutive_Creator", referencedColumnName = "idExecutive")
-    private Executive_User executive_User;
+    private Executive_User executiveReplayer;
+
+	public Long getIdReplay() {
+		return idReplay;
+	}
+
+	public void setIdReplay(Long idReplay) {
+		this.idReplay = idReplay;
+	}
+
+	public String getExcutivesText_Box() {
+		return excutivesText_Box;
+	}
+
+	public void setExcutivesText_Box(String excutivesText_Box) {
+		this.excutivesText_Box = excutivesText_Box;
+	}
+
+	public Date getShippingDate() {
+		return shippingDate;
+	}
+
+	public void setShippingDate(Date shippingDate) {
+		this.shippingDate = shippingDate;
+	}
+
+	public Claim getClaimToAnswer() {
+		return claimToAnswer;
+	}
+
+	public void setClaimToAnswer(Claim claimToAnswer) {
+		this.claimToAnswer = claimToAnswer;
+	}
+
+	public Executive_User getExecutiveReplayer() {
+		return executiveReplayer;
+	}
+
+	public void setExecutiveReplayer(Executive_User executiveReplayer) {
+		this.executiveReplayer = executiveReplayer;
+	}
+	
+	
 }
