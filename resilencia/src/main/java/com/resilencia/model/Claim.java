@@ -79,10 +79,6 @@ public class Claim {
 //Foreign Keys//
 ///////////////
 	 
-	 
-	 @ManyToOne
-	 @JoinColumn(name="idUrgent_Claim", nullable=false)
-	 private Admin_User admin_User;
 
 	 @ManyToOne
 	 @JoinColumn(name="idClaim_Creator", nullable=false)
@@ -91,9 +87,5 @@ public class Claim {
 	 
 	
 	
-
-}
-
-
 
 }
